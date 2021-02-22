@@ -1,19 +1,17 @@
-TypeScript tsconfig.json Demo
+TypeScript Node tsconfig-paths Demo
 ============================
 
-`tsconfig.json`是typescript项目的说明文件，指定`tsc`所需要的各个参数。
+在tsconfig.json中定义的`paths`仅供typescript类型检查使用。当它被编译成js时，并不会被替换，所以node无法直接执行。
+
+node配合`tsconfig-paths`使用，可以动态替换。
 
 ```
 npm install
-npm run tsc
-```
-
-或者使用`ts-node`:
-
-```
 npm run demo
 ```
 
-Resources
----------
-- tsconfig详解：<https://www.typescriptlang.org/docs/handbook/tsconfig-json.html>
+Problem:
+
+提示： Cannot find module '#src/utils/util1'
+
+不知道问题在哪儿

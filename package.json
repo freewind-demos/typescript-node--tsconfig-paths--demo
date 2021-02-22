@@ -1,14 +1,9 @@
 {
   "scripts": {
-    "tsc": "tsc && node hello.js",
-    "demo": "ts-node hello.ts"
-  },
-  "dependencies": {
-    "lodash": "4.17.5"
+    "demo": "tsc && node -r tsconfig-paths/register dist/hello.js"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.106",
-    "ts-node": "7.0.0",
-    "typescript": "3.0.1"
+    "tsconfig-paths": "3.9.0",
+    "typescript": "4.1.5"
   }
 }

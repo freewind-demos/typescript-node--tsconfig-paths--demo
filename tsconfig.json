@@ -3,12 +3,15 @@
     "strict": true,
     "target": "es6",
     "module": "commonjs",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "#src/*": [
+        "./src/*"
+      ]
+    }
   },
-  "files": [
-    "hello.ts"
+  "include": [
+    "src"
   ]
 }
