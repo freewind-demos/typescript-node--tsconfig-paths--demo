@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "demo": "tsc && node -r tsconfig-paths/register dist/hello.js"
+    "demo": "tsc && node -r tsconfig-paths/register src/hello.js"
   },
   "devDependencies": {
     "tsconfig-paths": "3.9.0",

@@ -10,8 +10,12 @@ npm install
 npm run demo
 ```
 
-Problem:
+注意：
+如果tsconfig.json中使用`outDir`把js代码产生到了另一个目录，比如`dist`，则无法正常工作。
+因为它从tsconfig.json中读取的paths定义指向的还是`src`目录，会报以下错误。
 
-提示： Cannot find module '#src/utils/util1'
+```
+Cannot find module '#src/utils/util1'
+```
 
-不知道问题在哪儿
+此时需要通过代码方式配置tsconfig-paths，手动进行替换。见另一个demo
