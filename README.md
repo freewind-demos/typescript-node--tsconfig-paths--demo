@@ -5,6 +5,10 @@ TypeScript Node tsconfig-paths Demo
 
 node配合`tsconfig-paths`使用，可以动态替换。
 
+这种做法不太好的地方必须在ts文件旁边生成js文件，实际项目中不可能这么做。一个更好的办法是使用ts-node避免js生成。
+见另一个demo
+
+
 ```
 npm install
 npm run demo
